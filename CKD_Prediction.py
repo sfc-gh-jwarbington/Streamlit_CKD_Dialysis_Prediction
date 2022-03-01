@@ -2,15 +2,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib
-
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-# import plotly_express as px
 import streamlit.components.v1 as components
 
 import shap
 import pickle
-import joblib
 import time
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -30,15 +27,6 @@ e3 = pickle.load(open('explainer_3c.pkl', 'rb'))
 
 m4 = pickle.load(open('etc_4c.pkl', 'rb'))
 e4 = pickle.load(open('explainer_4c.pkl', 'rb'))
-
-# m2 = joblib.load('etc_2c.jl')
-# e2 = joblib.load('explainer_2c.jl')
-
-# m3 = joblib.load('etc_3c.jl')
-# e3 = joblib.load('explainer_3c.jl')
-
-# m4 = joblib.load('etc_4c.jl')
-# e4 = joblib.load('explainer_4c.jl')
 
 st.title('Dialysis Risk Prediction for Chronic Kidney Disease Patients')
 st.subheader('This model is trying to answer:')
