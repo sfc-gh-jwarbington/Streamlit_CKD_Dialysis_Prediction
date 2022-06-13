@@ -5,13 +5,12 @@
 
 Libraries:  
   
-* scikit-survival==0.16.0
-* joblib==1.1.0
-* streamlit ==1.2.0
-* matplotlib==3.3.4
-* pandas==1.2.5
-* numpy==1.21.3
-* shap==0.39.0
+* streamlit~=1.10.0
+* pandas~=1.2.5
+* numpy~=1.19.5
+* matplotlib~=3.4.2
+* shap~=0.40.0
+* scikit-survival~=0.17.2
  
 Run:
 
